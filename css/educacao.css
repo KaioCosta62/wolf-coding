@@ -1,0 +1,94 @@
+.educacao{
+  width: 100%;
+  margin-top: -40px;
+}
+
+.educacao section{
+  display: none;
+}
+
+@keyframes ativarSection{
+  from{
+    opacity: 0;
+    transform: translate3d(-30px, 0);
+  }
+
+  to{
+    opacity: 1;
+    transform: translate3d(0,0);
+  }
+}
+
+.educacao section.ativarSection{
+  display: block;
+  animation: ativarSection .3s forwards;
+}
+
+.educacao h2{
+  font-family: var(--poppins);
+  font-size: 3rem;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.buttons{
+  margin-bottom: 32px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font-family: var(--roboto);
+  flex-wrap: wrap;
+}
+
+.buttons a.active{
+  background-color: #332330;
+  padding: 9px 18px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.buttons a{
+  border: 1.5px solid #a8a4a8;
+  padding: 9px 18px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #A8A4AB;
+  cursor: pointer;
+}
+
+section{
+  margin-bottom: 30px;
+}
+
+a.cv{
+  margin-top: 25px;
+  display: inline-block;
+  padding: 21px 40px;
+  background-color: #332330;
+  border-radius: 10px;
+  color: #fff;
+  font-family: var(--roboto);
+  font-size: 1.1rem;
+}
+
+section p{
+  font-family: var(--poppins);
+  font-size: 1.25rem;
+  max-width: 1000px;
+  color: #fff;
+}
+
+@media (max-width: 500px){
+  h2{
+    text-align: center;
+  }
+  
+  .buttons{
+    justify-content: center;
+  }
+
+  section p{
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}

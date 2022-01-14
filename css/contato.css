@@ -1,0 +1,77 @@
+.contato{
+  color: #fff;
+}
+
+.contato h2{
+  font-size: 4rem;
+  font-family: var(--poppins);
+  margin-bottom: 30px;
+}
+
+.contato p{
+  font-size: 1.25rem;
+  font-family: var(--poppins);
+  max-width: 90ch;
+  margin-bottom: 30px;
+}
+
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+input{
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #332330;
+  border: 2px solid #332330;
+  outline: 0;
+  margin-top: 10px;
+  color: #fff;
+}
+
+label{
+  margin-top: 10px;
+  display: block;
+  font-family: var(--poppins);
+  font-size: 1.75rem;
+}
+
+input::placeholder{
+  color: #fff;
+}
+
+select{
+  background-color: #332330;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  color: #fff;
+  border: 2px solid #332330;
+  outline: 0;
+  border-radius: 10px;
+}
+
+.contato button{
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  padding: 21px 99px;
+  border-radius: 10px;
+  background-color: #332330;
+  color: #FFF;
+  outline: 0;
+  border: 2px solid #332330;
+  cursor: pointer;
+  font-family: var(--roboto);
+  font-size: 1.25rem;
+}
+
+@media (max-width: 700px){
+  form{
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
